@@ -1,4 +1,4 @@
-+         - gcloud config set project multi-k8s-221115sudo: required
+sudo: required
 services:
         - docker
 env:
