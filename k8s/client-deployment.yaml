@@ -17,4 +17,7 @@ spec:
                                   image: davidsells/multi-client
                                   ports:
                                         - containerPort: 3000
+                                  resources:
+                                          request:
+                                                  cpu: 10m
 
