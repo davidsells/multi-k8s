@@ -1,0 +1,21 @@
+apiVersion: certmanager.k8s.io/v1alpha
+kind: Certificate
+metadata:
+        name: davidsells-today-tls
+spec:
+        secretName: davidsells-today
+        issuerRef:
+                name: letsencrypt-prod
+                kind: ClusterIssuer
+        commonName: davidsells.today
+        dnsNames:
+                - davidsells.today
+                - www.davidsells.today
+        acme:
+                config:
+                        - http01:
+                                ingressClass: nginx
+                          domains:
+                                  - davidsells.today
+                                  - www.davidsells.today
+
