@@ -21,6 +21,7 @@ script:
         - docker run davidsells/react-test npm test -- --coverage
 
 deploy:
+        skip_cleanup: true
         provider: script
         script: bash ./deploy.sh
         on:
