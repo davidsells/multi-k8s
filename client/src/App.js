@@ -13,8 +13,7 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-	    <h1>Fib Calculator version 2</h1>
-	    <h2>This is the Kubernetes version</h2>
+	    <h1>Fib Calculator Kubernetes Version</h1>
           </p>
           <a
             className="App-link"
